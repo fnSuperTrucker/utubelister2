@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial;
+      background-color: #121212; /* Dark background */
+      color: #ffffff; /* Light text for better contrast */
+    }
+    li {
+      margin: 8px 0;
+      word-break: break-all;
+      color: #e0e0e0; /* Lighter text for list items */
+    }
+    a {
+      color: #8ab4f8; /* Blue for links that fits dark mode */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+    #clearButton {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+     font-size: 14px;
+    }
+  
+  #clearButton:hover {
+    background-color: #bb2d3b;
+  }
+
+
+  </style>
+</head>
+<body>
+  <h2>YouTube Links from Chat</h2>
+  <button id="clearButton" style="margin-bottom: 15px;">Clear All Links</button>
+  <ul id="linkList"></ul>
+  <script src="links.js"></script>
+</body>
+</html>

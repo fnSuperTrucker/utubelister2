@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 800px; /* Adjusted for 4 columns */
+      padding: 10px;
+      font-family: Arial;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .column {
+      flex: 1;
+      margin: 0 5px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      color: #ffffff;
+    }
+    li {
+      margin: 8px 0;
+      word-break: break-all;
+      color: #e0e0e0;
+    }
+    a {
+      color: #8ab4f8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #clearButton {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    #clearButton:hover {
+      background-color: #bb2d3b;
+    }
+  </style>
+</head>
+<body>
+  <button id="clearButton">Clear All Links</button>
+  <div class="container">
+    <div class="column">
+      <h3>YouTube Videos</h3>
+      <ul id="youtubeList"></ul>
+    </div>
+    <div class="column">
+      <h3>YouTube Shorts</h3>
+      <ul id="shortsList"></ul>
+    </div>
+    <div class="column">
+      <h3>Twitter/X Posts</h3>
+      <ul id="twitterList"></ul>
+    </div>
+    <div class="column">
+      <h3>Other Links</h3>
+      <ul id="otherList"></ul>
+    </div>
+  </div>
+  <script src="links.js"></script>
+</body>
+</html>
